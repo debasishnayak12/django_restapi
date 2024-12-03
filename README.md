@@ -1,0 +1,10 @@
+-- create virtual environment as restapi and activate that
+-- RUN -> pip install mysqlclient
+       -> pip install "django<3.2"
+       -> pip install djangorestframework
+       -> django-admin startproject restapidjango (and add to path)
+       -> python manage.py startapp myapp
+       -> python manage.py makemigrations
+       -> python manage.py migrate
+       -> python manage.py runserver localhost:80(before doing this add <ALLOWED_HOSTS = ['localhost', '127.0.0.1']> to the settings.py )
+-- url will be < http://localhost/api/items/ > 'give operation as u want like create,read,delete,update'
